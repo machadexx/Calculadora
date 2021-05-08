@@ -66,17 +66,11 @@ namespace Calculadora
 
         private void btnSomar_Click(object sender, EventArgs e)
         {
-            textBoxRes.Text += "+";
-            int valores = int.Parse(textBoxRes.Text);
-            for (int i = 0; i < valores.ToString().Length; i++)
+            
+            foreach (char pos in textBoxRes.Text)
             {
-                foreach (char pos in textBoxRes.Text)
-                {
-                    if (pos.ToString() == "+")
-                    {
-                        int valor1 = int.Parse(textBoxRes.Text);
-                    }
-                }
+                int val1 = int.Parse(pos.ToString().Split('+'));
+
             }
         }
 
