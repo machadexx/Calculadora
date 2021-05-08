@@ -45,6 +45,7 @@ namespace Calculadora
             this.btn0 = new System.Windows.Forms.Button();
             this.textBoxRes = new System.Windows.Forms.TextBox();
             this.btnApagar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -165,6 +166,7 @@ namespace Calculadora
             this.btnSomar.TabIndex = 9;
             this.btnSomar.Text = "+";
             this.btnSomar.UseVisualStyleBackColor = true;
+            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
             // 
             // btnSub
             // 
@@ -198,6 +200,7 @@ namespace Calculadora
             this.btnIgual.TabIndex = 12;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = true;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btn0
             // 
@@ -233,6 +236,18 @@ namespace Calculadora
             this.btnApagar.TabIndex = 15;
             this.btnApagar.Text = "Limpar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(34, 462);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(83, 26);
+            this.btnSair.TabIndex = 16;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // Form1
             // 
@@ -240,6 +255,7 @@ namespace Calculadora
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(444, 511);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.textBoxRes);
             this.Controls.Add(this.btn0);
@@ -257,7 +273,7 @@ namespace Calculadora
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,6 +297,7 @@ namespace Calculadora
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.TextBox textBoxRes;
         private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Button btnSair;
     }
 }
 

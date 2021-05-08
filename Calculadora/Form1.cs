@@ -58,5 +58,36 @@ namespace Calculadora
         {
             textBoxRes.Text += "0";
         }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnSomar_Click(object sender, EventArgs e)
+        {
+            textBoxRes.Text += "+";
+            int valores = int.Parse(textBoxRes.Text);
+            for (int i = 0; i < valores.ToString().Length; i++)
+            {
+                foreach (char pos in textBoxRes.Text)
+                {
+                    if (pos.ToString() == "+")
+                    {
+                        int valor1 = int.Parse(textBoxRes.Text);
+                    }
+                }
+            }
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            textBoxRes.Clear();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
